@@ -13,22 +13,22 @@ public class LeetSpeakTranslator
          {
           array[index] ='3';
          }
-         else if(array[index] =='o')
+         if(array[index] =='o')
          {
           array[index] ='0';
          }
-        //  if(i == "I")
-        //  {
-        //   i ="1";
-        //  }
-        //  if(i == "t")
-        //  {
-        //   i ="7";
-        //  }
-        //  if(i == "s")
-        //  {
-        //   i ="z";
-        //  }
+         if(array[index] == 'I')
+         {
+          array[index] ='1';
+         }
+         if(array[index] == 't')
+         {
+          array[index] ='7';
+         }
+         if(array[index] == 's')
+         {
+          array[index] ='z';
+         }
       }    
       string result = string.Join("", array);
           return result;
